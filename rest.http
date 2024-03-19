@@ -1,10 +1,10 @@
 POST http://localhost:3000/api/auth/signup
 
 {
-    "name" : "anish mv 1",
-    "email" : "lol1@gmail.com",
+    "name" : "mail trap",
+    "email" : "mailtrap2@gmail.com",
     "password" : "1234",
-    "id" : 2
+    "id" : 2    
 } 
 
 ###
@@ -14,3 +14,10 @@ POST http://localhost:3000/api/auth/login
     "email" : "lol@gmail.com",
     "password" : "1234"
 } 
+
+###
+POST http://localhost:3000/api/auth/verify-otp
+
+{
+    "otp" : "350369"
+}
