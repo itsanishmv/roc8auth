@@ -1,8 +1,16 @@
 POST http://localhost:3000/api/auth/signup
 
 {
-    "name" : "anish mv",
-    "email" : "lol@gmail.com",
+    "name" : "anish mv 1",
+    "email" : "lol1@gmail.com",
     "password" : "1234",
     "id" : 2
+} 
+
+###
+POST http://localhost:3000/api/auth/login
+
+{
+    "email" : "lol@gmail.com",
+    "password" : "1234"
 } 

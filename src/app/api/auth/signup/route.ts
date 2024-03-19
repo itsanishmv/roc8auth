@@ -9,6 +9,7 @@ export async function POST(request: Request, response: Response, context: any) {
         const data = await sql`INSERT INTO users(id , name , email , password)
                                 VALUES (${formData.id} , ${formData.name}, ${formData.email},${formData.password})
         `
+        // send otp to the given mail and verify it 
         return NextResponse.json(SUCCESS)
     } catch(err) {
         return NextResponse.json(ERROR)
